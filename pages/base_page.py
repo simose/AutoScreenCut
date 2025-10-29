@@ -57,7 +57,7 @@ class BasePage:
             prefix = today.replace("-", "")
         else:
             # For other pages, extract meaningful name from URL
-            url_parts = url.replace("https://www.jackery.com/", "").split("/")
+            url_parts = url.replace("https://www.yunjiglobal.com/", "").split("/")
             if url_parts[0]:
                 prefix = url_parts[0].replace("-", "-")
             else:

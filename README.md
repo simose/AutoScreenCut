@@ -76,16 +76,14 @@ playwright install
 ```python
 # 测试URL配置
 URLS = [
-    "https://www.jackery.com/",
-    "https://www.jackery.com/products/jackery-explorer-5000-plus",
+    "https://www.yunjiglobal.com/",
+    "https://store.dji.com/product/dji-mic-3",
     # 添加更多需要测试的URL
 ]
 
 # 截图路径配置
 SCREENSHOTS_DIR = "D:\\AutoScreenCut"
 
-# 报告路径配置
-REPORTS_DIR = "D:\\AutoScreenCut\\reports"
 ```
 
 ### 配置项说明
@@ -130,13 +128,13 @@ pytest tests/test_screenshots.py -v
 
 ## 截图命名规则
 
-截图文件按以下格式命名：
-- 主页: `homepage_YYYYMMDD_A/B_001.png`
-- 其他页面: `页面名称_A/B_001.png`
+截图文件命名仅依据URL：
+- 主页（无路径部分，如 `https://example.com/`）: `homepage_A/B_001.png`
+- 其他页面：使用URL最低层级路径段（将 `-` 转为 `_`），如 `lowest_segment_A/B_001.png`
 
 例如：
-- `homepage_20241201_A_001.png`
-- `jackery_explorer_5000_plus_B_001.png`
+- `https://www.yoursite.com/` → `homepage_A_001.png`
+- `https://www.yoursite.com/products/solar-generator` → `solar_generator_B_001.png`
 
 
 ## 自定义配置
@@ -151,7 +149,7 @@ SCREENSHOTS_DIR = "你的截图保存路径"
 在 `config/config.py` 中的 `URLS` 列表添加新URL：
 ```python
 URLS = [
-    "https://www.jackery.com/",
+    "https://www.yunjiglobal.com/",
     "https://你的新URL.com",
 ]
 ```

@@ -29,6 +29,7 @@ B对于基准A的对比结果
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/43d09182384947a2a063d9ee140f5f57.png)
 
 对比结果日志输出
+
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/eaf69496d0e4496381d2f4c3feff8b6b.png)
 
 ## 项目落地过程中存在的问题

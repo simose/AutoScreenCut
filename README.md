@@ -4,6 +4,15 @@
 
 AutoScreenCut 是一个基于 Python + Playwright 框架开发的自动化网页截图测试工具。该工具能够自动访问指定网页，进行全页面滚动截图，并生成详细的测试报告。项目采用 Page Object Model (PO模式) 设计，具有良好的代码结构和可维护性。
 
+## 实战结果比对
+[案例](https://github.com/mapbox/pixelmatch/issues/127)（从源码问题中复制来的）：
+图A001
+![请添加图片描述](https://i-blog.csdnimg.cn/direct/d78d0f7314f642208eb72afc8625f188.png)
+图B001
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d46fd10fa7a044dabdc701b6c9954d27.png)
+B对于基准A的对比结果
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2c227c199c23450e867433bc0e462b6f.png)
+
 ## 功能特性
 
 - 🌐 **多URL支持**: 支持批量测试多个网页URL
